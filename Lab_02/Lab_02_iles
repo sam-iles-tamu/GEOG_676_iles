@@ -1,0 +1,31 @@
+## Sam Iles
+## Lab 02, GEOG 676 SP24
+## 02-04-2024
+## -----
+
+# Part 1
+# Goal: to multiply all 'part1' list items together.
+part1 = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096]
+ans1 = 1
+for i in part1:
+    ans1 *= i
+print(ans1) ## prints 3.0223 x 10^23 [in standard notation]
+
+#Part 2
+# Goal: to add all 'part2' list items together.
+part2 = [-1, 23, 483, 8573, -13847, -381569, 1652337, 718522177]
+print(sum(part2)) ## prints 719788176
+
+# Part 3
+# Goal: to add together only even numbers from list 'part3'. 
+part3 = [146, 875, 911, 83, 81, 439, 44, 5, 46, 76, 61, 68, 1, 14, 38, 26, 21] 
+part3_even = []
+for j in part3:
+    if j % 2 ==0:
+        part3_even.append(j)
+print(part3_even) ## verify
+
+ans3 = 1
+for k in part3_even:
+    ans3 *= k
+print(ans3) ## prints 21123741743104

@@ -34,4 +34,4 @@ arcpy.Buffer_analysis(garages_gdb + '/garages', garages_gdb + '/garages_buff', b
 #arcpy.analysis.Intersect(in_features, out_feature_class, {join_attributes}, {cluster_tolerance}, {output_type})
 arcpy.Intersect_analysis([garages_gdb + '/garages_buff', structures], garages_gdb + '/garage_str_intersect')
 # (5)
-arcpy.ExportTable_conversion(garages_gdb + "/garage_str_intersect.dbf", arcpy.env.workspace + "/created_intersection.csv")
+arcpy.ExportTable_conversion(garages_gdb + "/garage_str_intersect.dbf", arcpy.env.workspace + "/created_intersection.csv") 
